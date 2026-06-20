@@ -1635,7 +1635,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Ability Patch"),
         .pluralName = ITEM_PLURAL_NAME("Ability Patches"),
-        .price = (I_PRICE >= GEN_9) ? 250000 : 20,
+        .price = (I_PRICE >= GEN_9) ? 10000 : 20,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "Turns the ability\n"
@@ -15257,7 +15257,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LINKING_CORD] =
     {
         .name = ITEM_NAME("Linking Cord"),
-        .price = 8000,
+        .price = 3000,
         .description = COMPOUND_STRING(
             "A mysterious string\n"
             "that makes some\n"

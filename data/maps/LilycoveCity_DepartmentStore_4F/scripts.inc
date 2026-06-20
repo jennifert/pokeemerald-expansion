@@ -18,17 +18,21 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_TMs
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
+LilycoveCity_DepartmentStore_4F_Pokemart_TMs:
 	.2byte ITEM_TM_FIRE_BLAST
 	.2byte ITEM_TM_THUNDER
 	.2byte ITEM_TM_BLIZZARD
 	.2byte ITEM_TM_HYPER_BEAM
+	.2byte ITEM_TM_PROTECT
+	.2byte ITEM_TM_SAFEGUARD
+	.2byte ITEM_TM_REFLECT
+	.2byte ITEM_TM_LIGHT_SCREEN
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
@@ -36,17 +40,34 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs
+	pokemart LilycoveCity_DepartmentStore_4F_Pokemart_Mints
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
-LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
-	.2byte ITEM_TM_PROTECT
-	.2byte ITEM_TM_SAFEGUARD
-	.2byte ITEM_TM_REFLECT
-	.2byte ITEM_TM_LIGHT_SCREEN
+LilycoveCity_DepartmentStore_4F_Pokemart_Mints:
+	.2byte ITEM_LONELY_MINT
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_BRAVE_MINT
+	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_LAX_MINT
+	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_MILD_MINT
+	.2byte ITEM_RASH_MINT
+	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_CALM_MINT
+	.2byte ITEM_GENTLE_MINT
+	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_SASSY_MINT
+	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_HASTY_MINT
+	.2byte ITEM_JOLLY_MINT
+	.2byte ITEM_NAIVE_MINT
+	.2byte ITEM_SERIOUS_MINT
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
