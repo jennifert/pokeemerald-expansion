@@ -1188,7 +1188,7 @@
 #define FLAG_HIDDEN_ITEM_SSANNE_EXTERIOR_LAVA_COOKIE                       (FLAG_HIDDEN_ITEMS_START + 190)
 
 // Unused hidden item flags
-#define FLAG_UNUSED_0x4A7               0x4A7 // I_EXP_SHARE_FLAG
+#define FLAG_VERDANT_EXP_SHARE_ON       0x4A7 // I_EXP_SHARE_FLAG
 #define FLAG_UNUSED_0x4A8               0x4A8 // I_ORAS_DOWSING_FLAG
 #define FLAG_UNUSED_0x4A9               0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA               0x4AA // Unused Flag
@@ -1699,7 +1699,8 @@
 #define FLAG_RECEIVED_TM_THIEF               0
 #define FLAG_CONTEST_SKETCH_CREATED          0  // Set but never read
 #define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0
-#define FLAG_RECEIVED_EXP_SHARE              0
+// #define FLAG_RECEIVED_EXP_SHARE              0
+#define FLAG_RECEIVED_LUCKY_EGG_FROM_STONE   0
 #define FLAG_POKERUS_EXPLAINED               0
 #define FLAG_RECEIVED_RUNNING_SHOES          0
 #define FLAG_RECEIVED_QUICK_CLAW             0
