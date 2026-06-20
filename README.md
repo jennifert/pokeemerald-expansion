@@ -1,53 +1,165 @@
-# About `pokeemerald-expansion`
+# Pokémon Verdant
 
-![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer ID, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokémon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokémon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokémon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
+**Pokémon Verdant** is the working codename for a work-in-progress Pokémon Emerald enhancement project built with [`pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion/).
 
-<!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
+The goal is to keep the heart of Hoenn intact while adding modern quality-of-life features, easier team building, one-save Hoenn Pokédex completion, and a warmer postgame full of useful rewards and playful surprises.
 
-**`pokeemerald-expansion`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon ROM hacks. **`pokeemerald-expansion`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project. **It is not a playable Pokémon game on its own.**
+> **Status:** early development / testing build  
+> **More features coming soon.**
 
-# [Features](FEATURES.md)
+## About This Project
 
-**`pokeemerald-expansion`** offers hundreds of features from various [core series Pokémon games](https://bulbapedia.bulbagarden.net/wiki/Core_series), along with popular quality-of-life enhancements designed to streamline development and improve the player experience. A full list of those features can be found in [`FEATURES.md`](FEATURES.md).
+Pokémon Verdant is designed as an enhanced Hoenn experience rather than a full replacement of Emerald. The main focus is:
 
-# [Credits](CREDITS.md)
+- Making every Hoenn Regional Dex Pokémon obtainable in one save.
+- Reducing unnecessary grinding and trade requirements.
+- Adding modern conveniences from later Pokémon games.
+- Keeping optional challenge settings separate from casual quality-of-life features.
+- Building a strong Hoenn-focused base before larger future experiments.
 
- [![](https://img.shields.io/github/all-contributors/rh-hideout/pokeemerald-expansion/upcoming)](CREDITS.md)
+No ROMs are included in this repository.
 
-If you use **`pokeemerald-expansion`**, please credit **RHH (Rom Hacking Hideout)**. Optionally, include the version number for clarity.
+## Current Test Features
 
-```
+These features are currently planned for testing or already enabled in the development branch.
+
+### Hoenn Dex Availability
+
+- All Hoenn Regional Dex Pokémon should be obtainable in-game.
+- Missing or version-exclusive lines are being moved into normal gameplay where appropriate.
+- Surskit and Meditite are available in Hoenn.
+- Lunatone and other version-exclusive Pokémon are available in one save.
+- Feebas can be fished on Route 119.
+- Trade evolutions are being replaced or supplemented with in-game evolution methods.
+
+### Experience and Progression
+
+- Gen 6-style Exp Share behavior.
+- Reusable TMs.
+- Bag-use evolution items, similar to Pokémon Legends: Arceus.
+- Pokémon can learn moves from their pre-evolutions.
+
+### Lilycove Department Store Updates
+
+- Mail has been removed from the Lilycove Department Store.
+- TMs have been moved to a dedicated clerk.
+- Nature Mints have been added to another clerk.
+- Ability Patch, Ability Capsule, and Link Cable are temporarily available on Floor 4 for testing.
+
+### Item and Overworld Quality of Life
+
+- First-time item description popups are enabled.
+- ORAS-style Dowsing Machine support is enabled.
+- Immortal berries are enabled.
+- Berry mutations are enabled.
+- TMs are reusable.
+
+### Summary Screen and Pokémon Data
+
+- EC information is visible.
+- IV information is visible.
+- Additional summary-screen information is being tested.
+
+## Planned Features
+
+These features are planned or being considered for later development.
+
+### Friendship and Partner Features
+
+- Start menu care option for checking friendship, petting Pokémon, and feeding berries.
+- Friendship checker NPC improvements.
+- Mom's Care system, where Mom can give party-wide affection based on badges earned or Elite Four clears.
+- Following Pokémon support using `OW_FOLLOWERS_ENABLED`.
+- Partner reactions for important story locations and cozy home moments.
+
+### Team Building and Postgame Tools
+
+- Ability Capsule and Ability Patch moved to final balanced locations.
+- Nature Mints placed in a proper late-game or postgame shop.
+- Exp Candies as postgame team-building tools.
+- Buyable or improved access to key competitive items.
+- Hidden Power type changer.
+- Poké Ball changing service.
+- Improved Move Relearner and Egg Move access.
+
+### Hoenn Postgame Expansion
+
+- Unchosen starter eggs after becoming Champion.
+- Jirachi event at Mossdeep Space Center.
+- AuroraTicket / Birth Island Deoxys access.
+- Old Sea Map / Faraway Island Mew access.
+- Optional bonus islands and legendary events.
+- Improved rematches and postgame trainer challenges.
+
+### Battle and Type Updates
+
+- Fairy type support.
+- Official-style Fairy retcons for existing Pokémon such as Mawile, Azumarill, Gardevoir, Clefairy, and others.
+- Fairy move distribution.
+- More modern held items.
+- Optional improved boss teams.
+- Optional challenge and assist settings.
+
+### Interface and Future Features
+
+- ORAS-style Key Item Wheel.
+- Additional Start menu options.
+- Improved Pokédex information.
+- More quality-of-life settings.
+- Multi-region support may be explored after the Hoenn-focused version is complete.
+
+## Testing Checklist
+
+Before considering a build stable, the following should be tested:
+
+- Hoenn Regional Dex completion in one save.
+- Updated wild encounters.
+- Feebas fishing on Route 119.
+- Exp Share behavior.
+- Lilycove Department Store inventories.
+- Reusable TMs.
+- Nature Mints.
+- Ability Patch, Ability Capsule, and Link Cable test placements.
+- Immortal berry behavior.
+- Berry mutations.
+- First-time item description popups.
+- Pre-evolution move learning.
+- Summary screen EC and IV display.
+- Bag-use evolution items.
+- ORAS Dowsing Machine behavior.
+
+## Build Instructions
+
+This project is based on `pokeemerald-expansion`, so the original build process still applies.
+
+See:
+
+- [Installing pokeemerald-expansion](INSTALL.md)
+- [Building pokeemerald-expansion](INSTALL.md#Building-pokeemerald-expansion)
+- [Updating pokeemerald-expansion](INSTALL.md#Updating-pokeemerald-expansion)
+
+Do not use GitHub's **Download ZIP** option if you plan to update, merge branches, or preserve project history.
+
+## Credits
+
+Pokémon Verdant is based on **RHH's `pokeemerald-expansion`**, which is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project.
+
+Please credit **RHH (Rom Hacking Hideout)** and the `pokeemerald-expansion` contributors.
+
+```text
 Based off RHH's pokeemerald-expansion 1.16.1 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
-Please consider [crediting all contributors](CREDITS.md) involved in the project!
+Additional credits should be added here as features, tutorials, assets, or external branches are incorporated.
 
-# Choosing `pokeemerald` or **`pokeemerald-expansion`**
+Planned credit reminders:
 
-- **`pokeemerald-expansion`** supports multiplayer functionality with other games built on **`pokeemerald-expansion`**. It is not compatible with official Pokémon games.
-- If compatibility with official games is important, use [`pokeemerald`](https://github.com/pret/pokeemerald). Otherwise, we recommend using **`pokeemerald-expansion`**.
-- **`pokeemerald-expansion`** incorporates regular updates from `pokeemerald`, including bug fixes and documentation improvements.
+- RHH / `pokeemerald-expansion`
+- pret / `pokeemerald`
+- ORAS-style Key Item Wheel author, if added
+- Multi-region support contributors, if added
+- Any sprite, music, tutorial, or feature contributors used later
 
-# [Getting Started](INSTALL.md)
+## Disclaimer
 
-❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches.
-
-If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
-
-## 📥 [Installing **`pokeemerald-expansion`**](INSTALL.md)
-## 🏗️ [Building **`pokeemerald-expansion`**](INSTALL.md#Building-pokeemerald-expansion)
-## 🚚 [Migrating from **`pokeemerald`**](INSTALL.md#Migrating-from-pokeemerald)
-## 🚀 [Updating **`pokeemerald-expansion`**](INSTALL.md#Updating-pokeemerald-expansion)
-
-# [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
-
-For detailed documentation, visit the [pokeemerald-expansion documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
-
-# [Contributions](CONTRIBUTING.md)
-If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
-
-# [Community](https://discord.gg/6CzjAG6GZk)
-
-[![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
-
-Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
+This is a fan-made, non-commercial project. Pokémon is owned by Nintendo, Game Freak, and The Pokémon Company. No official ROM files are provided.
