@@ -42,6 +42,23 @@ Release notes will be tied to GitHub milestones when possible. Testing builds ma
 
 Companion projects such as the documentation website and campaign/team builder may use their own milestones and do not necessarily affect the ROM version number.
 
+
+### Ideas for Future Updates
+I’m planning Version 2 around Pokémon variety and team-building.
+
+#### Version 2
+- Add later-generation evolutions for compatible Pokémon, such as Nosepass, Roselia, and Togetic.
+- Expand Bill’s Eevee gift options.
+- Add select regional forms through gifts, trades, or special encounters.
+- Explore a small island or NPC-based method for introducing regional forms naturally.
+
+#### Future Ideas
+- Enable additional Emerald Expansion features where appropriate.
+- Explore Kanto-related maps and content.
+- Experiment with Mega Evolution support.
+- Improve or expand Pokédex functionality.
+- Add more optional side content without disrupting the original Emerald feel.
+
 ## Feature Overview
 
 This section describes the kinds of features Pokémon Verdant is planned to include. Not every feature listed here is implemented yet. For the most accurate current status, see the GitHub issues and milestones.
