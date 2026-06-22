@@ -7,7 +7,8 @@ The goal is to keep the heart of Hoenn intact while adding modern quality-of-lif
 > **Status:** early development / testing build  
 > **More features coming soon.**  
 > For current implementation status, testing notes, and future planning, check the [GitHub issues](https://github.com/jennifert/pokeemerald-expansion/issues) and [milestones](https://github.com/jennifert/pokeemerald-expansion/milestones).
-
+> Pokémon Verdant is currently a personal hobby project and is not accepting outside contributions at this time. See `CONTRIBUTING.md` for details.
+ 
 ## About This Project
 
 Pokémon Verdant is designed as an enhanced Hoenn experience rather than a full replacement of Emerald. The main focus is:
