@@ -5,7 +5,8 @@
 The goal is to keep the heart of Hoenn intact while adding modern quality-of-life features, easier team building, one-save Hoenn Pokédex completion, and a warmer postgame full of useful rewards and playful surprises.
 
 > **Status:** early development / testing build  
-> **More features coming soon.**
+> **More features coming soon.**  
+> For current implementation status, testing notes, and future planning, check the [GitHub issues](https://github.com/jennifert/pokeemerald-expansion/issues) and [milestones](https://github.com/jennifert/pokeemerald-expansion/milestones).
 
 ## About This Project
 
@@ -19,114 +20,100 @@ Pokémon Verdant is designed as an enhanced Hoenn experience rather than a full 
 
 No ROMs are included in this repository.
 
-## Current Test Features
+## Release Roadmap
 
-These features are currently planned for testing or already enabled in the development branch.
+Pokémon Verdant uses milestone-based versioning. Early versions are testing snapshots, while later `0.x` releases represent larger feature milestones. The goal is for `v1.0.0` to represent the complete main Pokémon Verdant release.
 
-### Hoenn Dex Availability
+| Version | Milestone | Focus |
+|---|---|---|
+| `v0.0.1-test` | First Feature Test Pass | Early testing snapshot for encounter, item, Exp Share, summary screen, and quality-of-life changes. |
+| `v0.1.0` | Early/Midgame Rewards & Economy | Item placement, daily rewards, early gifts, shop progression, and economy updates. |
+| `v0.2.0` | QoL & Interface Pass | Interface improvements, expanded bag space, bike QoL, mute/low HP settings, and other comfort features. |
+| `v0.3.0` | Battle Systems & Balance | Gym/E4 updates, battle item balance, move/item synergy, and trainer rebalance work. |
+| `v0.4.0` | Postgame Events & Gifts | Postgame NPCs, legendary/event access, gift Pokémon, rematches, and extra rewards. |
+| `v0.5.0` | DexNav / PokéNav Tools | Area checklists, PokéNav/DexNav utilities, Pokédex improvements, and navigation tools. |
+| `v0.6.0` | Challenge & Assist Settings | Optional challenge rules, assist settings, accessibility/testing toggles, and related systems. |
+| `v0.7.0` | Flavor & Visual Polish | Verdant flavor text, visual identity, title/load screen polish, and optional easter eggs. |
+| `v1.0.0` | Complete Main Release | Main Pokémon Verdant roadmap complete and tested. |
 
-- All Hoenn Regional Dex Pokémon should be obtainable in-game.
-- Missing or version-exclusive lines are being moved into normal gameplay where appropriate.
-- Surskit and Meditite are available in Hoenn.
-- Lunatone and other version-exclusive Pokémon are available in one save.
-- Feebas can be fished on Route 119.
-- Trade evolutions are being replaced or supplemented with in-game evolution methods.
+Release notes will be tied to GitHub milestones when possible. Testing builds may be marked as pre-releases. Public releases should be distributed as patch files only, never as `.gba` ROM files.
 
-### Experience and Progression
+Companion projects such as the documentation website and campaign/team builder may use their own milestones and do not necessarily affect the ROM version number.
 
-- Gen 6-style Exp Share behavior.
+## Feature Overview
+
+This section describes the kinds of features Pokémon Verdant is planned to include. Not every feature listed here is implemented yet. For the most accurate current status, see the GitHub issues and milestones.
+
+### Hoenn Dex and Availability
+
+- All Hoenn Regional Dex Pokémon obtainable in one save.
+- Version-exclusive and difficult-to-obtain Pokémon folded into normal gameplay.
+- More reasonable access to rare Pokémon such as Feebas, Surskit, Meditite, Lunatone, and other availability pain points.
+- Trade evolution alternatives through in-game items or services.
+
+### Progression and Team Building
+
+- Modern Exp Share behavior.
 - Reusable TMs.
-- Bag-use evolution items, similar to Pokémon Legends: Arceus.
-- Pokémon can learn moves from their pre-evolutions.
-
-### Lilycove Department Store Updates
-
-- Mail has been removed from the Lilycove Department Store.
-- TMs have been moved to a dedicated clerk.
-- Nature Mints have been added to another clerk.
-- Ability Patch, Ability Capsule, and Link Cable are temporarily available on Floor 4 for testing.
-
-### Item and Overworld Quality of Life
-
-- First-time item description popups are enabled.
-- ORAS-style Dowsing Machine support is enabled.
-- Immortal berries are enabled.
-- Berry mutations are enabled.
-- TMs are reusable.
-
-### Summary Screen and Pokémon Data
-
-- EC information is visible.
-- IV information is visible.
-- Additional summary-screen information is being tested.
-
-## Planned Features
-
-These features are planned or being considered for later development.
-
-### Friendship and Partner Features
-
-- Start menu care option for checking friendship, petting Pokémon, and feeding berries.
-- Friendship checker NPC improvements.
-- Mom's Care system, where Mom can give party-wide affection based on badges earned or Elite Four clears.
-- Following Pokémon support using `OW_FOLLOWERS_ENABLED`.
-- Partner reactions for important story locations and cozy home moments.
-
-### Team Building and Postgame Tools
-
-- Ability Capsule and Ability Patch moved to final balanced locations.
-- Nature Mints placed in a proper late-game or postgame shop.
-- Exp Candies as postgame team-building tools.
-- Buyable or improved access to key competitive items.
-- Hidden Power type changer.
-- Poké Ball changing service.
-- Improved Move Relearner and Egg Move access.
-
-### Hoenn Postgame Expansion
-
-- Unchosen starter eggs after becoming Champion.
-- Jirachi event at Mossdeep Space Center.
-- AuroraTicket / Birth Island Deoxys access.
-- Old Sea Map / Faraway Island Mew access.
-- Optional bonus islands and legendary events.
-- Improved rematches and postgame trainer challenges.
-
-### Battle and Type Updates
-
-- Fairy type support.
-- Official-style Fairy retcons for existing Pokémon such as Mawile, Azumarill, Gardevoir, Clefairy, and others.
-- Fairy move distribution.
-- More modern held items.
-- Optional improved boss teams.
-- Optional challenge and assist settings.
-
-### Interface and Future Features
-
-- ORAS-style Key Item Wheel.
-- Additional Start menu options.
-- Improved Pokédex information.
-- More quality-of-life settings.
-- Multi-region support may be explored after the Hoenn-focused version is complete.
-
-## Testing Checklist
-
-Before considering a build stable, the following should be tested:
-
-- Hoenn Regional Dex completion in one save.
-- Updated wild encounters.
-- Feebas fishing on Route 119.
-- Exp Share behavior.
-- Lilycove Department Store inventories.
-- Reusable TMs.
-- Nature Mints.
-- Ability Patch, Ability Capsule, and Link Cable test placements.
-- Immortal berry behavior.
-- Berry mutations.
-- First-time item description popups.
-- Pre-evolution move learning.
-- Summary screen EC and IV display.
 - Bag-use evolution items.
-- ORAS Dowsing Machine behavior.
+- More accessible move relearning, egg moves, and tutor moves.
+- Better access to Nature Mints, Ability Capsule, Ability Patch, Hidden Power customization, and competitive held items.
+- Postgame breeding support, including a special Ditto gift and Destiny Knot access.
+
+### Quality of Life and Interface
+
+- Following Pokémon support.
+- Expanded bag space.
+- Reusable Escape Rope Key Item.
+- ORAS-style Dowsing Machine support.
+- Optional mute and low-HP beep settings.
+- Possible ORAS-style Key Item Wheel.
+- Pokémon Center services such as box healing and Poké Ball changing.
+
+### Rewards, Shops, and Economy
+
+- Staged item shops that unlock useful items as the story progresses.
+- Daily berry rewards from home.
+- Early-game support items that help without removing challenge.
+- Postgame shops for team-building and Battle Frontier preparation.
+
+### Battle and Balance
+
+- Verified Fairy type support from `pokeemerald-expansion`.
+- Modern battle items and move/item synergy.
+- Optional boss team updates for Gym Leaders and Elite Four.
+- Later Battle Frontier improvements, including move tutors, a BP broker, and postgame utility NPCs.
+
+### Challenge and Assist Options
+
+- Challenge Settings for stricter rules such as level caps, held-only battle items, required nicknames, Nuzlocke tracking, and first-encounter rules.
+- Assist Mode settings for comfort and testing, such as auto-heal, no wild encounters, EXP/money multipliers, one-hit capture, and shiny mode.
+- Challenge features and assist features are planned to stay separate.
+
+### Postgame and Flavor
+
+- Postgame NPC battles and gifts.
+- In-game access to event-style content such as Aurora Ticket / Birth Island.
+- Bill, Mom, Birch, Nursery, and Battle Frontier postgame additions.
+- Cozy partner reactions, optional flavor text, regional-form rumors, and small easter eggs.
+
+### Companion Projects
+
+Pokémon Verdant may also have companion projects, tracked separately from the ROM version:
+
+- Documentation website.
+- Team builder / campaign helper.
+- Data references for Pokémon, moves, items, encounters, and team planning.
+
+## Development Status
+
+The README is intended to describe the project direction, not act as the source of truth for what is finished.
+
+Use GitHub for the latest status:
+
+- [Open issues](https://github.com/jennifert/pokeemerald-expansion/issues) track planned work, bugs, polish tasks, and research notes.
+- [Milestones](https://github.com/jennifert/pokeemerald-expansion/milestones) group issues into release phases.
+- Release notes will summarize what has actually been tested and included in each version.
 
 ## Build Instructions
 
