@@ -1,5 +1,57 @@
 # What features are included?
-## Table of Contents
+
+
+
+# Features
+
+This fork is based on [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion). The sections below separate features specific to this fork from features provided by the upstream Expansion project.
+
+## Fork-Specific Features
+
+This section lists changes and additions planned or added specifically for this fork.
+
+### Version 0.01
+
+- First playable test release.
+- Initial project setup and cleanup.
+- Early balance and compatibility fixes as needed during playtesting.
+
+## Ideas for Future Updates
+
+These are possible ideas for future versions and are not guaranteed features.
+
+### Pokémon Variety and Evolutions
+
+- Add later-generation evolutions for compatible Pokémon, such as:
+  - Nosepass → Probopass
+  - Roselia → Roserade
+  - Togetic → Togekiss
+- Expand Bill’s Eevee gift options.
+- Add or improve access to Eevee evolutions.
+
+### Regional Forms
+
+- Explore adding select regional forms, such as:
+  - Zigzagoon
+  - Meowth
+  - Sandshrew
+  - Diglett
+  - Vulpix
+- Introduce regional forms through gift NPCs, trades, special encounters, or a small optional island area.
+
+### Future Expansion Features to Explore
+
+- Enable additional features already available in Pokémon Emerald Expansion where appropriate.
+- Explore Kanto-related maps or content.
+- Experiment with Mega Evolution support.
+- Explore Pokédex improvements.
+- Add optional side content while keeping the original Emerald feel.
+
+## Upstream Pokémon Emerald Expansion Features
+
+The following features come from the upstream Pokémon Emerald Expansion project. Some may require configuration, enabling, or additional work before they are used in this fork.
+
+### Table of Contents
 - [What features are included?](#what-features-are-included)
   - [Table of Contents](#table-of-contents)
   - [Configuration files](#configuration-files)
@@ -11,7 +63,7 @@
   - [Overworld improvements](#overworld-improvements)
   - [Developer tools](#developer-tools)
 
-## Configuration files
+### Configuration files
 A lot of features listed below can be turned off as desired. Check which ones in these files
 - [AI config](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/ai.h)
 - [Battle config](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/battle.h)
@@ -28,7 +80,7 @@ A lot of features listed below can be turned off as desired. Check which ones in
 - [Species enabled](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/species_enabled.h)
 - [Summary screen config](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/summary_screen.h)
 
-## Upgraded Battle Engine
+### Upgraded Battle Engine
 - ***Battle gimmicks:*** Mega Evolution, Primal Reversion, Ultra Burst, Z-Moves, Dynamax, Gigantamax and Terastallization.
 - ***Newer game battle types:*** Double Wild Battles, custom Multi Battles, Inverse Battles, 1v2/2v1 battles, Sky Battles.
 - ***Updated battle mechanics:*** Critical capture, Frostbite support, Poké Ball quick menu, Move description menu, no badge boosts, Gen 4 Fog, obedience, Affection, Party swap upon catch, move effectiveness in battle, FRLG/Gen4+ whiteout money calculation, Gen 4-style shadows.
@@ -41,7 +93,7 @@ A lot of features listed below can be turned off as desired. Check which ones in
 - ***Improved AI:*** Faster and considers new effects added by Expansion.
 - ***Popular features:*** Level/EV Caps, Sleep Clause, Type Indicators.
 
-## Full Trainer customization
+### Full Trainer customization
 - ***Compatible with Pokémon Showdown's team syntax:*** Create your trainer teams in the [teambuilder](https://play.pokemonshowdown.com/teambuilder) and paste the results!
 - ***Custom Pokémon data:*** Nicknames, EVs, IVs, Moves, Abilities, Poké Balls, Friendship, Nature, Gender, Shininess, Dynamax level, Gigantamax Factor and Tera Type.
   - ***"Ace Pokémon":*** Will save a specific Pokémon for last.
@@ -49,7 +101,7 @@ A lot of features listed below can be turned off as desired. Check which ones in
 - ***Custom sliding trainer messages:*** First Turn, landing a super-effective hit, before Mega Evolution, etc.
 - ***New AI Flag options:*** Customize the intelligence of your trainers.
 - ***Trainer class Poké Balls:*** Divers use Dive Balls, Breeders use Nest Balls, etc.
-## Pokémon data
+### Pokémon data
 - ***Improved Pokémon Data structure:*** Optimized space to allow fitting more information, such as Tera type, 12-character names, Hyper-trained stats, evolution conditions, saved HP/status effect.
 - ***Updated breeding mechanics:*** Poké Ball/Egg Move/Ability/Nature inheritance, Level 1 eggs automatic incense babies.
 - ***Updated species data:*** Stats, Types, Abilities, Hidden Abilities, Egg Groups, EV Yields, movesets, Battle Facility bans, guaranteed perfect IV counts, ORAS Dex numbers.
@@ -59,20 +111,20 @@ A lot of features listed below can be turned off as desired. Check which ones in
 - ***Revamped Evolution System***: Multiple Evolution conditions can be stacked in order to create complex methods without additional coding. Every condition except Affection and console gyroscope is supported.
 - ***Form Change System.*** Most form changes can be added without additional coding. This includes support for: Holding/using an item, HP thresholds being met, weather change in and/or out of battle, Fusions, and more.
 
-## Interface improvements
+### Interface improvements
 - ***Pokémon Summary:*** Move relearner, EV/IV checks, Nature colors ([feature branch](https://github.com/DizzyEggg/pokeemerald/tree/nature_color) by @DizzyEggg).
 - ***Party Menu:*** "Move Item" option.
 - ***Pokémon Storage System:*** Move option as default, access from Box Link item.
 - ***HGSS-style Pokédex*** ([original feature branch](https://github.com/TheXaman/pokeemerald/tree/tx_pokedexPlus_hgss) by @TheXaman): Detailed in-game information accessible to players.
 
-## Engine improvements
+### Engine improvements
 - ***All base pokeemerald bugfixes implemented by default:*** Anything under the `BUGFIX` define.
 - ***Improved sprite and palette compression:*** Assets use less space than vanilla compression.
 - ***Modern compiler support:*** Detect potential errors in your code more easily.
 - ***Dynamic Multichoice*** ([original branch](https://github.com/SBird1337/pokeemerald/tree/feature/dynmulti) by @SBird1337): Easier way to add multiple-choice menus for scripting.
 - ***High-Quality RNG:*** No more broken vanilla RNG.
 
-## Overworld improvements
+### Overworld improvements
 - ***Modern Mechanics***: Defog field move, B2W2+ Repel system, Running indoors, Removed field poison, Chain fishing, VS. Seeker, FRLG+ whiteout message.
 - ***Overworld and Follower Pokémon*** ([feature branch](https://github.com/aarant/pokeemerald/tree/followers-expanded-id) by @aarant)
     - *Includes Dynamic overworld palettes (DOWP) and Overworld Expansion for event IDs beyond 255.*
@@ -84,7 +136,7 @@ A lot of features listed below can be turned off as desired. Check which ones in
 - ***XY Berry Mechanics:*** Mutations, moisture, weeds, pests.
 - ***Obtained Item descriptions*** (feature branch by @ghoulslash).
 
-## Developer tools
+### Developer tools
 - ***Integrated Testing:*** Pinpoint if your custom mechanics have broken something else in the game or not.
 - ***Pokémon Sprite Visualizer:*** Test every Pokémon sprite and animation.
 - ***Overworld debug menu** ([original feature branch](https://github.com/TheXaman/pokeemerald/tree/tx_debug_system) by @TheXaman)*: Support menu with an assortment of features to facilitate debugging, including warping, flag and var toggling, Pokémon and item generation and more.
