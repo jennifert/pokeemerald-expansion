@@ -21,7 +21,7 @@ Pokémon Verdant is a hobby enhancement of Pokémon Emerald, built on RH-Hideout
 - #3 partially checked: reusable TMs, Gen VI-style Exp. Share, immortal fully grown berries, first-acquisition item descriptions, 15 Poké Balls from Brendan/May, EV/IV summary displays, early Poké Mart, planting/growing/picking berries, and summary testing. Pending: berry mutations, pre-evolution moves, bag-use evolution items, ORAS Dowsing Machine, modern same-species Egg Move transfer, save/load and story regression.
 - #1 partially checked: Surskit, Lotad line and Seedot line availability. Remaining species and evolution checks below.
 - #2 remains open: Lilycove shop changes and item testing; temporary placements do not establish final unlocks.
-- #56–64 are closed; closure reasons and code implementation were not verified. Treat these as archived issue designs pending reconciliation, not completed features.
+- #56–64 remain open: planned breeding improvements under Milestone 12.
 
 ### 3. Pokédex, encounters and evolution
 **Core goal:** Hoenn regional availability in a single save without link trading, version exclusives or external events. The original #1 excludes unchosen starters; #41 later proposes making both available. Hoenn completion uses caught flags; bonus non-Hoenn Pokémon and Deoxys should not be required. Reconcile the original 202-entry reference dataset with the chosen completion policy.
@@ -56,7 +56,7 @@ Other discussed items/services: ORAS berries, Shiny Charm, Lucky Egg, EXP Candie
 - Early Rustboro Pokémon Nursery (or Devon Nursery): breeding only, no experience gain, no early Ditto, clear explanation. Normal Day Care near Mauville remains midgame. Preserve compatible-pair rules.
 - Everstone reward after Peeko rescue: grunt discards a “useless stone”; visible persistent item ball avoids a bag-full story interruption. Nursery hints at nature inheritance.
 - Postgame shiny foreign/Japanese Ditto if supported, good or perfect IVs (exact values TBD), Destiny Knot, suggested Lv. 30 and Poké Ball/Luxury Ball. One-time gift; unlocks Slateport Destiny Knot stock. Test Masuda-style compatibility and inheritance.
-- Archived/closed designs #56–64: faster Egg generation; faster hatching (classic/modern toggle if practical); improved Everstone nature and Destiny Knot IV inheritance; easier Egg Move inheritance; Day Care compatibility/status information; useful Egg summary without inappropriate spoilers; item accessibility; stronger postgame breeding QoL. Confirm actual disposition before resurrecting them.
+- Open #56–64: faster Egg generation; faster hatching (classic/modern toggle if practical); improved Everstone nature and Destiny Knot IV inheritance; easier Egg Move inheritance; Day Care compatibility/status information; useful Egg summary without inappropriate spoilers; item accessibility; stronger postgame breeding QoL.
 - Open #65: make Mirror Herb obtainable and verify its breeding/Egg Move functionality. Open #66: optional male normal/Hidden Ability inheritance without Ditto, toggleable.
 - Egg Move relearner linked to Nursery/Day Care progress; later tutor relearner. Verify modern same-species transfer to a Pokémon with an empty move slot.
 
@@ -133,7 +133,7 @@ Summary EV/IV access, sorted moves, relearner progression, Poké Rider/map Fly a
 ### 12. Roadmap and milestones
 Historical proposed milestone names: Verdant QoL & Interface; Challenge & Assist; Early/Midgame Rewards & Economy; Postgame Events & Gifts; DexNav/PokéNav Tools; Flavor & Visual Polish; Battle Systems & Balance; companion documentation website; team builder. The live milestone list could not be retrieved; these are historical themes, not confirmed current GitHub titles or release dates.
 
-Verified numeric assignments from individual issue records: milestone #1 contains issues 1–6; #2 contains 11–12; #4 contains 7; #6 contains 10; #9 contains 8; #10 contains 9; #11 contains 47. Other assignments, milestone state and completion totals were not verified. Live list: https://github.com/jennifert/pokeemerald-expansion/milestones
+Verified numeric assignments from individual issue records: milestone #1 contains issues 1–6; #2 contains 11–12; #4 contains 7; #6 contains 10; #9 contains 8; #10 contains 9; #11 contains 47; #12 Breeding improvements (issues #56–64). Other assignments, milestone state and completion totals were not verified. Live list: https://github.com/jennifert/pokeemerald-expansion/milestones
 
 Suggested sequencing (editorial synthesis, not a committed version plan):
 1. Core regression: finish #1–3 and #6, establish one-save availability and stable save/config flags.
@@ -145,6 +145,8 @@ Suggested sequencing (editorial synthesis, not a committed version plan):
 
 ### 13. Complete GitHub issue register
 All 66 issue numbers and titles below were retrieved via the GitHub connector. Open/closed states were independently queried. Links use the actual repository issue numbers. Detailed design summaries above consolidate available issue bodies and earlier project discussions; they are not verbatim exports of every checklist or comment.
+
+**Current issue summary:** 66 total — 64 open, 2 completed.
 
 | Issue | Title | Status | Verified milestone |
 |---|---|---|---|
@@ -203,21 +205,21 @@ All 66 issue numbers and titles below were retrieved via the GitHub connector. O
 | [#53](https://github.com/jennifert/pokeemerald-expansion/issues/53) | Add badge/progress availability filter | Open | — |
 | [#54](https://github.com/jennifert/pokeemerald-expansion/issues/54) | Add shareable team URL | Open | — |
 | [#55](https://github.com/jennifert/pokeemerald-expansion/issues/55) | Use PokéAPI sprites for website and team builder | Open | — |
-| [#56](https://github.com/jennifert/pokeemerald-expansion/issues/56) | Add faster Egg generation at the Day Care | Closed | — |
-| [#57](https://github.com/jennifert/pokeemerald-expansion/issues/57) | Add faster Egg hatching | Closed | — |
-| [#58](https://github.com/jennifert/pokeemerald-expansion/issues/58) | Improve Everstone nature inheritance | Closed | — |
-| [#59](https://github.com/jennifert/pokeemerald-expansion/issues/59) | Improve Destiny Knot IV inheritance | Closed | — |
-| [#60](https://github.com/jennifert/pokeemerald-expansion/issues/60) | Improve Egg Move inheritance | Closed | — |
-| [#61](https://github.com/jennifert/pokeemerald-expansion/issues/61) | Add Day Care breeding information | Closed | — |
-| [#62](https://github.com/jennifert/pokeemerald-expansion/issues/62) | Add Egg summary information | Closed | — |
-| [#63](https://github.com/jennifert/pokeemerald-expansion/issues/63) | Improve breeding item accessibility | Closed | — |
-| [#64](https://github.com/jennifert/pokeemerald-expansion/issues/64) | Add postgame advanced breeding QoL | Closed | — |
+| [#56](https://github.com/jennifert/pokeemerald-expansion/issues/56) | Add faster Egg generation at the Day Care | Open | — |
+| [#57](https://github.com/jennifert/pokeemerald-expansion/issues/57) | Add faster Egg hatching | Open | — |
+| [#58](https://github.com/jennifert/pokeemerald-expansion/issues/58) | Improve Everstone nature inheritance | Open | — |
+| [#59](https://github.com/jennifert/pokeemerald-expansion/issues/59) | Improve Destiny Knot IV inheritance | Open | — |
+| [#60](https://github.com/jennifert/pokeemerald-expansion/issues/60) | Improve Egg Move inheritance | Open | — |
+| [#61](https://github.com/jennifert/pokeemerald-expansion/issues/61) | Add Day Care breeding information | Open | — |
+| [#62](https://github.com/jennifert/pokeemerald-expansion/issues/62) | Add Egg summary information | Open | — |
+| [#63](https://github.com/jennifert/pokeemerald-expansion/issues/63) | Improve breeding item accessibility | Open | — |
+| [#64](https://github.com/jennifert/pokeemerald-expansion/issues/64) | Add postgame advanced breeding QoL | Open | — |
 | [#65](https://github.com/jennifert/pokeemerald-expansion/issues/65) | Mirror Herb addition | Open | — |
 | [#66](https://github.com/jennifert/pokeemerald-expansion/issues/66) | Optional male Ability/HA inheritance without Ditto | Open | — |
 
 ### 14. Open decisions and maintenance notes
 - Confirm actual milestone titles, states, issue assignments, labels and PR/branch/release inventory directly in GitHub. Search returned null milestone/label fields; individual issue retrieval was limited. Companion-site repository search returned an access/not-found error. No GitHub records were changed.
-- Resolve closure reasons for breeding issues #56–64. Confirm whether existing upstream behavior, abandoned ideas, duplicates or completed work explains their closure.
+- Issues #56–64 were reopened and retained under Milestone 12. Review existing upstream breeding mechanics before implementation to distinguish configuration changes, custom enhancements, and regression testing.
 - Decide final HA access NPC, cost and stock; verify trade evolution scheme, Milotic method and starter trade/gift details. Choose Rayquaza gating, Jirachi event and Bill specifics.
 - Reconcile overlapping #26/#45 friendship design and website/builder issues after architectural decision. Verify title screen option selected in November and final mascot. Establish final gym/League teams and level caps.
 - Confirm whether proposed future mechanics and item placements are still desired before coding. Mark each feature as planned, implemented, tested, deferred or dropped in future updates.
